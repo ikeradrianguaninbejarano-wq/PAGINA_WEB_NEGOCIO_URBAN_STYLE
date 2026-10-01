@@ -1,0 +1,12 @@
+{
+  "productos": [
+    { "id": 1, "name": "Camiseta Oversize Black", "category": "Camisetas", "description": "Algodón suave y silueta amplia para todos los días.", "price": 24.99, "image": "assets/img/camiseta-oversize-black.svg" },
+    { "id": 2, "name": "Camiseta Essential White", "category": "Camisetas", "description": "Un básico ligero que combina con todo.", "price": 19.99, "image": "assets/img/camiseta-essential-white.svg" },
+    { "id": 3, "name": "Jean Baggy Blue", "category": "Pantalones", "description": "Denim azul con espacio para moverte.", "price": 39.99, "image": "assets/img/jean-baggy-blue.svg" },
+    { "id": 4, "name": "Cargo Pants Black", "category": "Pantalones", "description": "Bolsillos funcionales y actitud relajada.", "price": 44.99, "image": "assets/img/cargo-pants-black.svg" },
+    { "id": 5, "name": "Chaqueta Denim", "category": "Chaquetas", "description": "Una capa versátil para los días frescos.", "price": 59.99, "image": "assets/img/chaqueta-denim.svg" },
+    { "id": 6, "name": "Hoodie Urban Gray", "category": "Chaquetas", "description": "Abrigo cómodo con un perfil urbano.", "price": 49.99, "image": "assets/img/hoodie-urban-gray.svg" },
+    { "id": 7, "name": "Gorra Classic", "category": "Accesorios", "description": "El toque final para un look sin esfuerzo.", "price": 14.99, "image": "assets/img/gorra-classic.svg" },
+    { "id": 8, "name": "Zapatillas Urban White", "category": "Calzado", "description": "Comodidad diaria con líneas limpias.", "price": 69.99, "image": "assets/img/zapatillas-urban-white.svg" }
+  ]
+}

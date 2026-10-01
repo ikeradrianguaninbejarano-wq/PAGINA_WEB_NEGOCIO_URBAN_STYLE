@@ -1,0 +1,342 @@
+[
+  {
+    "id": "camiseta-blanca",
+    "name": "Camiseta esencial blanca",
+    "category": "Camisetas",
+    "description": "Un básico de manga corta para combinar a tu manera.",
+    "priceCents": 1999,
+    "currency": "USD",
+    "image": "assets/photos/camiseta.jpg",
+    "alt": "Camiseta blanca de manga corta y cuello redondo, puesta en un modelo",
+    "provisional": true,
+    "imageSource": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+    "variants": [
+      {
+        "id": "camiseta-blanca-0-0",
+        "color": "Blanco",
+        "size": "S",
+        "stock": 5
+      },
+      {
+        "id": "camiseta-blanca-0-1",
+        "color": "Blanco",
+        "size": "M",
+        "stock": 6
+      },
+      {
+        "id": "camiseta-blanca-0-2",
+        "color": "Blanco",
+        "size": "L",
+        "stock": 7
+      },
+      {
+        "id": "camiseta-blanca-0-3",
+        "color": "Blanco",
+        "size": "XL",
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "id": "jeans",
+    "name": "Jeans clásicos",
+    "category": "Jeans",
+    "description": "Denim para tus combinaciones de todos los días.",
+    "priceCents": 3999,
+    "currency": "USD",
+    "image": "assets/photos/jeans.jpg",
+    "alt": "Tres jeans doblados en tonos azul claro, azul oscuro y negro",
+    "provisional": true,
+    "imageSource": "https://images.unsplash.com/photo-1542272604-787c3835535d",
+    "variants": [
+      {
+        "id": "jeans-0-0",
+        "color": "Azul claro",
+        "size": "28",
+        "stock": 5
+      },
+      {
+        "id": "jeans-0-1",
+        "color": "Azul claro",
+        "size": "30",
+        "stock": 6
+      },
+      {
+        "id": "jeans-0-2",
+        "color": "Azul claro",
+        "size": "32",
+        "stock": 7
+      },
+      {
+        "id": "jeans-0-3",
+        "color": "Azul claro",
+        "size": "34",
+        "stock": 0
+      },
+      {
+        "id": "jeans-1-0",
+        "color": "Azul oscuro",
+        "size": "28",
+        "stock": 5
+      },
+      {
+        "id": "jeans-1-1",
+        "color": "Azul oscuro",
+        "size": "30",
+        "stock": 6
+      },
+      {
+        "id": "jeans-1-2",
+        "color": "Azul oscuro",
+        "size": "32",
+        "stock": 7
+      },
+      {
+        "id": "jeans-1-3",
+        "color": "Azul oscuro",
+        "size": "34",
+        "stock": 0
+      },
+      {
+        "id": "jeans-2-0",
+        "color": "Negro",
+        "size": "28",
+        "stock": 5
+      },
+      {
+        "id": "jeans-2-1",
+        "color": "Negro",
+        "size": "30",
+        "stock": 6
+      },
+      {
+        "id": "jeans-2-2",
+        "color": "Negro",
+        "size": "32",
+        "stock": 7
+      },
+      {
+        "id": "jeans-2-3",
+        "color": "Negro",
+        "size": "34",
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "id": "chompa",
+    "name": "Chompa con capucha",
+    "category": "Chompas",
+    "description": "Una capa informal para acompañar tus días frescos.",
+    "priceCents": 4499,
+    "currency": "USD",
+    "image": "assets/photos/chompa.jpg",
+    "alt": "Persona de espaldas con una chompa gris de capucha",
+    "provisional": true,
+    "imageSource": "https://images.unsplash.com/photo-1556821840-3a63f95609a7",
+    "variants": [
+      {
+        "id": "chompa-0-0",
+        "color": "Gris",
+        "size": "S",
+        "stock": 5
+      },
+      {
+        "id": "chompa-0-1",
+        "color": "Gris",
+        "size": "M",
+        "stock": 6
+      },
+      {
+        "id": "chompa-0-2",
+        "color": "Gris",
+        "size": "L",
+        "stock": 7
+      },
+      {
+        "id": "chompa-0-3",
+        "color": "Gris",
+        "size": "XL",
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "id": "chaqueta",
+    "name": "Chaqueta de denim",
+    "category": "Chaquetas",
+    "description": "Denim y un cuello con textura para completar tu look.",
+    "priceCents": 5999,
+    "currency": "USD",
+    "image": "assets/photos/chaqueta.jpg",
+    "alt": "Chaqueta azul de denim con cuello de borrego claro",
+    "provisional": true,
+    "imageSource": "https://images.unsplash.com/photo-1543076447-215ad9ba6923",
+    "variants": [
+      {
+        "id": "chaqueta-0-0",
+        "color": "Azul",
+        "size": "S",
+        "stock": 5
+      },
+      {
+        "id": "chaqueta-0-1",
+        "color": "Azul",
+        "size": "M",
+        "stock": 6
+      },
+      {
+        "id": "chaqueta-0-2",
+        "color": "Azul",
+        "size": "L",
+        "stock": 7
+      },
+      {
+        "id": "chaqueta-0-3",
+        "color": "Azul",
+        "size": "XL",
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "id": "camiseta-grafica",
+    "name": "Camiseta gráfica negra",
+    "category": "Camisetas",
+    "description": "Una camiseta con personalidad para un look relajado.",
+    "priceCents": 2499,
+    "currency": "USD",
+    "image": "assets/photos/camiseta_negra.jpg",
+    "alt": "Modelo con camiseta negra y estampado blanco de una mano",
+    "provisional": true,
+    "imageSource": "https://images.unsplash.com/photo-1503341504253-dff4815485f1",
+    "variants": [
+      {
+        "id": "camiseta-grafica-0-0",
+        "color": "Negro",
+        "size": "S",
+        "stock": 5
+      },
+      {
+        "id": "camiseta-grafica-0-1",
+        "color": "Negro",
+        "size": "M",
+        "stock": 6
+      },
+      {
+        "id": "camiseta-grafica-0-2",
+        "color": "Negro",
+        "size": "L",
+        "stock": 7
+      },
+      {
+        "id": "camiseta-grafica-0-3",
+        "color": "Negro",
+        "size": "XL",
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "id": "camisa",
+    "name": "Camisa blanca",
+    "category": "Camisas",
+    "description": "Una opción de manga larga para ocasiones más formales.",
+    "priceCents": 2999,
+    "currency": "USD",
+    "image": "assets/photos/camisa.jpg",
+    "alt": "Camisa blanca de manga larga combinada con una corbata oscura",
+    "provisional": true,
+    "imageSource": "https://images.unsplash.com/photo-1598033129183-c4f50c736f10",
+    "variants": [
+      {
+        "id": "camisa-0-0",
+        "color": "Blanco",
+        "size": "S",
+        "stock": 5
+      },
+      {
+        "id": "camisa-0-1",
+        "color": "Blanco",
+        "size": "M",
+        "stock": 6
+      },
+      {
+        "id": "camisa-0-2",
+        "color": "Blanco",
+        "size": "L",
+        "stock": 7
+      },
+      {
+        "id": "camisa-0-3",
+        "color": "Blanco",
+        "size": "XL",
+        "stock": 0
+      }
+    ]
+  },
+  {
+    "id": "gorra",
+    "name": "Gorra clásica",
+    "category": "Accesorios",
+    "description": "El complemento de tus planes al aire libre.",
+    "priceCents": 1499,
+    "currency": "USD",
+    "image": "assets/photos/gorra.jpg",
+    "alt": "Gorra blanca de visera curva y paneles de malla sobre un fondo claro",
+    "provisional": true,
+    "imageSource": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b",
+    "variants": [
+      {
+        "id": "gorra-0-0",
+        "color": "Blanco",
+        "size": "Única",
+        "stock": 5
+      }
+    ]
+  },
+  {
+    "id": "zapatillas",
+    "name": "Zapatillas urbanas",
+    "category": "Calzado",
+    "description": "Una silueta deportiva para completar tu combinación.",
+    "priceCents": 6999,
+    "currency": "USD",
+    "image": "assets/photos/zapatillas.jpg",
+    "alt": "Zapatilla deportiva roja con suela blanca sobre fondo rojo",
+    "provisional": true,
+    "imageSource": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    "variants": [
+      {
+        "id": "zapatillas-0-0",
+        "color": "Rojo",
+        "size": "38",
+        "stock": 5
+      },
+      {
+        "id": "zapatillas-0-1",
+        "color": "Rojo",
+        "size": "39",
+        "stock": 6
+      },
+      {
+        "id": "zapatillas-0-2",
+        "color": "Rojo",
+        "size": "40",
+        "stock": 7
+      },
+      {
+        "id": "zapatillas-0-3",
+        "color": "Rojo",
+        "size": "41",
+        "stock": 8
+      },
+      {
+        "id": "zapatillas-0-4",
+        "color": "Rojo",
+        "size": "42",
+        "stock": 0
+      }
+    ]
+  }
+]

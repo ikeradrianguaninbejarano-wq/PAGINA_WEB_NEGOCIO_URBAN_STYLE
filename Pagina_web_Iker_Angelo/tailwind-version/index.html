@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="URBAN STYLE. Explora camisetas, jeans y chompas; encuentra tus esenciales y prepara tu selección.">
+  <meta name="theme-color" content="#171916">
+  <title>URBAN STYLE | Tu estilo, a tu manera</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body class="bg-paper text-ink antialiased">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="border-b border-ink/20 bg-paper">
+    <div class="bg-ink px-4 py-2 text-center text-sm text-white">Tu estilo. Tus reglas. <span class="text-lime">URBAN STYLE.</span></div>
+    <div class="shell flex flex-wrap items-center justify-between gap-4 py-5">
+      <a class="brand" href="#inicio" aria-label="Urban Style, inicio">URBAN<span class="font-normal">STYLE</span></a>
+      <nav aria-label="Navegación principal"><ul class="flex flex-wrap gap-x-5 gap-y-1 text-sm font-bold">
+        <li><a class="nav-link" href="#catalogo">Colección</a></li>
+        <li><a class="nav-link" href="#nosotros">Nosotros</a></li>
+        <li><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul></nav>
+      <button id="open-cart" class="btn btn-dark" type="button" aria-haspopup="dialog" aria-controls="cart-dialog">Mi carrito <span id="cart-count" class="rounded-full bg-lime px-2 text-ink">0</span></button>
+    </div>
+  </header>
+  <main id="contenido" tabindex="-1">
+    <section id="inicio" class="bg-ink text-white" aria-labelledby="hero-title">
+      <div class="shell grid items-center gap-8 py-12 md:grid-cols-2 md:py-16">
+        <div>
+          <p class="eyebrow text-lime">Esenciales para cada día · 01 / 2026</p>
+          <h1 id="hero-title" class="mt-6 text-[clamp(2.5rem,6vw,5.5rem)] leading-[1.05] tracking-tight">VISTE TU<br><span class="text-lime">PROPIA RUTA.</span></h1>
+          <p class="mt-6 max-w-md text-lg leading-relaxed text-stone-200">De un plan tranquilo a recorrer la ciudad. Encuentra las prendas que van contigo.</p>
+          <a class="btn btn-lime mt-8" href="#catalogo">Explorar colección <span aria-hidden="true">↗</span></a>
+          <p class="mt-8 text-sm text-stone-200">Camisetas / Denim / Chompas</p>
+        </div>
+        <figure class="relative min-w-0">
+          <img class="hero-photo w-full object-cover" src="assets/photos/chaqueta.jpg" width="800" height="600" alt="Chaqueta de denim azul con cuello claro, colgada en una pared" fetchpriority="high">
+          <figcaption class="bg-lime px-5 py-4 font-bold text-ink">BÁSICOS CON PERSONALIDAD. <span class="ml-2 font-normal">A tu manera.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+    <section id="catalogo" class="shell py-14 md:py-20" aria-labelledby="catalog-title">
+      <div class="flex flex-wrap items-end justify-between gap-5">
+        <div><p class="eyebrow text-forest">Tu próxima combinación empieza aquí</p><h2 id="catalog-title" class="mt-3 text-4xl tracking-tight md:text-5xl">Piezas esenciales</h2></div>
+        <p class="max-w-sm text-muted">Explora, elige tu talla y guarda tu selección en el carrito.</p>
+      </div>
+      <p class="mt-6 border-l-4 border-forest pl-4 text-sm text-muted">Catálogo provisional: fotografías de referencia, precios y existencias de ejemplo. Las compras aún no están habilitadas.</p>
+      <form id="filters" class="my-8 grid gap-4 border-y border-ink/20 py-6 sm:grid-cols-2 lg:grid-cols-4" role="search" aria-labelledby="catalog-title">
+        <div><label for="search">Buscar una prenda</label><input id="search" type="search" placeholder="Camiseta, jeans…" maxlength="100" autocomplete="off"></div>
+        <div><label for="category">Categoría</label><select id="category"><option value="">Todas las categorías</option></select></div>
+        <div><label for="sort">Ordenar por</label><select id="sort"><option value="selection">Nuestra selección</option><option value="price-asc">Precio: menor a mayor</option><option value="price-desc">Precio: mayor a menor</option><option value="name">Nombre: A–Z</option></select></div>
+        <div class="flex flex-col items-stretch gap-2"><button type="submit" class="btn btn-dark w-full">Buscar</button><button id="clear-filters" type="reset" class="btn btn-outline w-full">Limpiar filtros</button></div>
+      </form>
+      <p id="results" class="mb-5 text-sm text-muted" role="status" aria-atomic="true">Cargando la colección…</p>
+      <div id="catalog-error" hidden><p role="alert">No pudimos cargar la colección. Comprueba tu conexión y vuelve a intentarlo.</p><button id="retry" class="btn btn-outline mt-4" type="button">Reintentar</button></div>
+      <noscript><p>Activa JavaScript para consultar el catálogo y utilizar el carrito. Puedes leer el resto de la página sin activarlo.</p></noscript>
+      <ul id="products" class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4"></ul>
+      <p id="empty-results" class="border border-ink/30 p-8 text-center" hidden>No encontramos prendas con esos filtros. Prueba otra búsqueda o pulsa «Limpiar filtros».</p>
+    </section>
+    <section id="nosotros" class="bg-ink py-14 text-white md:py-20" aria-labelledby="about-title">
+      <div class="shell grid gap-8 md:grid-cols-2 md:items-center">
+        <div><p class="eyebrow text-lime">Esto es Urban Style</p><h2 id="about-title" class="mt-4 text-4xl leading-tight tracking-tight md:text-5xl">La ciudad cambia.<br><span class="text-lime">Tu estilo habla.</span></h2></div>
+        <div class="max-w-lg space-y-5 text-lg leading-relaxed text-stone-200"><p>Creemos en un armario que se adapte a tu ritmo. Prendas fáciles de combinar y espacio para expresar quién eres.</p><p>Estamos preparando nuestra primera colección. Mientras tanto, explora esta selección de referencia y encuentra tu próxima combinación.</p></div>
+      </div>
+    </section>
+    <section id="contacto" class="shell grid gap-10 py-14 md:py-20 lg:grid-cols-2" aria-labelledby="contact-title">
+      <div><p class="eyebrow text-forest">Hablemos de tu estilo</p><h2 id="contact-title" class="mt-3 text-4xl leading-tight tracking-tight">¿Tienes una pregunta?</h2><p class="mt-5 max-w-md text-muted">Puedes preparar tu consulta aquí. El envío estará disponible cuando abramos nuestro canal de atención; por ahora no se transmite ni se guarda tu información.</p><p class="mt-4 text-sm text-muted">Los campos marcados con * son obligatorios.</p></div>
+      <form id="contact-form" class="grid min-w-0 gap-5 sm:grid-cols-2">
+        <div><label for="name">Nombre completo *</label><input id="name" name="name" type="text" autocomplete="name" required minlength="3" maxlength="80" aria-describedby="name-help name-error"><small id="name-help">Entre 3 y 80 caracteres.</small><p id="name-error" class="field-error" hidden></p></div>
+        <div><label for="email">Correo electrónico *</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="120" aria-describedby="email-help email-error"><small id="email-help">Ejemplo: nombre@correo.com.</small><p id="email-error" class="field-error" hidden></p></div>
+        <div><label for="phone">Teléfono (opcional)</label><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="25" pattern="\+?[0-9\(\) \-]{7,25}" aria-describedby="phone-help phone-error"><small id="phone-help">De 7 a 15 dígitos; admite +, paréntesis, espacios y guiones.</small><p id="phone-error" class="field-error" hidden></p></div>
+        <div><label for="subject">Asunto *</label><input id="subject" name="subject" type="text" required minlength="3" maxlength="100" aria-describedby="subject-help subject-error"><small id="subject-help">Entre 3 y 100 caracteres.</small><p id="subject-error" class="field-error" hidden></p></div>
+        <div class="sm:col-span-2"><label for="message">Mensaje *</label><textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000" aria-describedby="message-help message-error"></textarea><small id="message-help">Entre 10 y 1000 caracteres. No incluyas datos sensibles.</small><p id="message-error" class="field-error" hidden></p></div>
+        <div class="sm:col-span-2"><p id="form-errors" class="field-error mb-4" role="alert" aria-atomic="true"></p><button class="btn btn-dark" type="submit" disabled>Revisar mi consulta</button><p id="form-status" class="mt-4 text-forest" role="status"></p></div>
+      </form>
+    </section>
+  </main>
+  <footer class="bg-lime py-8"><div class="shell flex flex-wrap items-center justify-between gap-5"><a class="brand" href="#inicio">URBAN<span class="font-normal">STYLE</span></a><p>Estilo propio. Ciudad abierta.</p><p class="text-sm">© 2026 URBAN STYLE</p></div></footer>
+  <div id="announcement" class="shell py-3 text-sm text-forest" role="status" aria-live="polite" aria-atomic="true"></div>
+  <dialog id="cart-dialog" class="cart-dialog" aria-labelledby="cart-title" aria-describedby="cart-note" aria-modal="true">
+    <div class="flex flex-wrap items-center justify-between gap-4 border-b border-ink/20 pb-5"><h2 id="cart-title" class="text-3xl">Mi carrito</h2><button id="close-cart" class="btn btn-outline" type="button" autofocus>Cerrar <span aria-hidden="true">×</span></button></div>
+    <p id="cart-note" class="my-5 text-sm text-muted">Tu selección se guarda en este navegador. Los precios y existencias son provisionales; todavía no puedes realizar compras.</p>
+    <p id="storage-note" class="mb-5 text-sm text-muted" hidden>No pudimos guardar el carrito en este navegador. Podrás usarlo mientras mantengas esta página abierta.</p>
+    <p id="cart-empty" class="py-10 text-center">Tu carrito está vacío. Encuentra una prenda que vaya contigo.</p>
+    <ul id="cart-items" class="space-y-6"></ul>
+    <p id="cart-status" class="mt-4 text-sm text-forest" role="status" aria-atomic="true"></p>
+    <div class="mt-6 border-t border-ink/20 pt-5"><div class="flex flex-wrap justify-between gap-3 text-xl font-bold"><span>Subtotal estimado</span><span id="subtotal">$0.00</span></div><p class="mt-2 text-sm text-muted">No se han calculado envío ni cargos adicionales. No se efectuará ningún cobro.</p><button id="continue" type="button" class="btn btn-dark mt-6 w-full">Seguir explorando</button></div>
+  </dialog>
+</body>
+</html>
